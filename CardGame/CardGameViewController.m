@@ -9,21 +9,15 @@
 #import "CardGameViewController.h"
 
 @interface CardGameViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 
 @end
 
 @implementation CardGameViewController
-
-- (void)viewDidLoad
+- (IBAction)btnClick:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.btn setTitle:@"sdf" forState:Nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
